@@ -68,16 +68,15 @@ const birdsPerDays = [
 ];
 console.log(birdsPerDays.length);
 export function fixBirdCountLog(birdsPerDay) {
-  console.log(birdsPerDay.length);
   for (let ind = 0; ind < birdsPerDays.length; ind++) {
     if (2 * ind < birdsPerDay.length) {
-      // 18 20
-      // console.log("a");
       birdsPerDay[2 * ind] = birdsPerDay[2 * ind] + 1;
     }
   }
   return birdsPerDay;
+  console.log(birdsPerDay);
 }
 // const expected = [3, 8, 5, 1, 4, 5, 1, 4, 2, 6, 1, 3, 1, 1, 6, 4, 2, 1, 3, 6];
 console.log(fixBirdCountLog(birdsPerDays));
+// const expected = [3, 8, 5, 1, 4, 5, 1, 4, 2, 6, 1, 3, 1, 1, 6, 4, 2, 1, 3, 6];
 // => [3, 5, 1, 7, 5, 1]
