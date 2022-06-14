@@ -80,3 +80,11 @@ export function fixBirdCountLog(birdsPerDay) {
 console.log(fixBirdCountLog(birdsPerDays));
 // const expected = [3, 8, 5, 1, 4, 5, 1, 4, 2, 6, 1, 3, 1, 1, 6, 4, 2, 1, 3, 6];
 // => [3, 5, 1, 7, 5, 1]
+
+// 3
+export function fiexBirdCounting1(birdsPerDay) {
+  for (let ind = 0; ind < array.length; ind += 2) {
+    birdsPerDay[i] += 1;
+  }
+  return birdsPerDay;
+}
